@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     }
 
     const userInfo = {
-        name: user.firstName!,
+        name: user.firstName || "Teammeate",
         picture: user.imageUrl!,
     }
 
